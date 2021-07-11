@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="justasya.github.io - Asya's personal website.">
+   <meta name="description" content="justasya.github.io - Персональный сайт Аси">
 <style>
 @media screen and (max-width: 900px) {
   canvas {
@@ -70,13 +70,14 @@ div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 </style>
-   <title>Asya's website</title>
+   <title>Сайт Аси</title>
 </head>
 <body>
    <main>
       <br>
-      <p>Hello, I'm Asya<br>You can watch my photos here</p>
-      <a onclick="scrollDown()">scroll down</a>
+      <p>Привет, я Ася<br>Вы можете смотреть мои фото здесь</p>
+      <a onclick="scrollDown()">промотать вниз</a>
+      <a>Нажмите для рассмотра в полном размере</a>
    </main>
    <div align="center">
    <a href="https://github.com/justasya/justasya.github.io/raw/main/pics/2020-04-28%2012-14-03.JPG" target="_blank"><img src="https://github.com/justasya/justasya.github.io/raw/main/pics/thumb/2020-04-28%2012-14-03.jpg" style="border: none; max-width:100%; max-height:100%;"></a>
@@ -125,12 +126,12 @@ window.onscroll = function () {
 };
 // GLITCH EFFECT
 setInterval(function () {
-    var msg1 = 'Hello, I\'m Asya', msg2 = 'You can watch my photos here';
+    var msg1 = 'Привет, я Ася', msg2 = 'Вы можете смотреть мои фото здесь';
     var _loop_1 = function (i) {
         if (Math.random() > .99 && msg1[i] != ' ') {
             msg1 = setChar(msg1, i);
             setTimeout(function () {
-                msg1 = setChar(msg1, i, 'Hello, I\'m Asya'[i]);
+                msg1 = setChar(msg1, i, 'Привет, я Ася'[i]);
             }, 300);
         }
     };
@@ -141,7 +142,7 @@ setInterval(function () {
         if (Math.random() > .99 && msg2[i] != ' ') {
             msg2 = setChar(msg2, i);
             setTimeout(function () {
-                msg2 = setChar(msg2, i, 'You can watch my photos here'[i]);
+                msg2 = setChar(msg2, i, 'Вы можете смотреть мои фото здесь'[i]);
             }, 300);
         }
     };
